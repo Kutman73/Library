@@ -16,12 +16,15 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'src.book',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +61,7 @@ WSGI_APPLICATION = 'library.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': BASE_DIR / 'db.sqlite3'
         'NAME': secrets_data.get('DB_NAME'),
         'USER': secrets_data.get('DB_USER'),
         'PASSWORD': secrets_data.get('DB_PASSWORD'),

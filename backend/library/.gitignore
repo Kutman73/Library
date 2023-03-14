@@ -391,3 +391,9 @@ dmypy.json
 cython_debug/
 
 .secrets.json
+src/book/migrations/*
+
+media/
+static/
+
+*.sqlite3

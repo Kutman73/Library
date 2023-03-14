@@ -9,6 +9,8 @@ python = "^3.10"
 Django = "^4.1.7"
 dynaconf = "^3.1.12"
 psycopg2-binary = "^2.9.5"
+djangorestframework = "^3.14.0"
+django-jazzmin = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 
