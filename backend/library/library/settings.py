@@ -10,7 +10,7 @@ secrets_data = Dynaconf(
 
 SECRET_KEY = secrets_data.get('SECRET_KEY')
 
-DEBUG = secrets_data.get('DEBUG')
+DEBUG = True if secrets_data.get('DEBUG') == '1' else False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
